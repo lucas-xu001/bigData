@@ -69,6 +69,6 @@
 
 ## 数据采集通道示意
 
-![采集](C:\Users\64649\Desktop\bigData\pic\采集.jpg)
+![采集](.\pic\采集.jpg)
 
 ## docker 镜像概述
