@@ -109,6 +109,6 @@ dockerhub地址：https://hub.docker.com/repository/docker/xufengyuan/bigdata/ge
 
 ## 数据采集通道示意
 
-![采集](.\pic\采集.jpg)
+![采集](\pic\采集.jpg)
 
 ## 
