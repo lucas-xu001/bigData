@@ -1,9 +1,9 @@
-package com.atguigu.etl.loader;
+package com.root.etl.loader;
 
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.Logger;
 import cn.hutool.setting.Setting;
-import com.atguigu.etl.bean.Config;
+import com.root.etl.bean.Config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

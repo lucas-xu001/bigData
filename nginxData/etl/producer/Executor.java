@@ -1,16 +1,16 @@
-package com.atguigu.etl.producer;
+package com.root.etl.producer;
 
 import cn.hutool.core.lang.WeightRandom;
-import com.atguigu.etl.bean.Config;
-import com.atguigu.etl.behaviors.RequestBehavior;
-import com.atguigu.etl.behaviors.impl.CycleBrowserBehavior;
-import com.atguigu.etl.behaviors.impl.CycleDeviceBehavior;
-import com.atguigu.etl.behaviors.impl.FastRequestAdFixedDeviceFixedBehavior;
-import com.atguigu.etl.behaviors.impl.FastRequestAdFixedIpFixedBehavior;
-import com.atguigu.etl.behaviors.impl.NormalBotBehavior;
-import com.atguigu.etl.behaviors.impl.NormalBrowserBehavior;
-import com.atguigu.etl.behaviors.impl.NormalMobilBehavior;
-import com.atguigu.etl.loader.ConfigLoader;
+import com.root.etl.bean.Config;
+import com.root.etl.behaviors.RequestBehavior;
+import com.root.etl.behaviors.impl.CycleBrowserBehavior;
+import com.root.etl.behaviors.impl.CycleDeviceBehavior;
+import com.root.etl.behaviors.impl.FastRequestAdFixedDeviceFixedBehavior;
+import com.root.etl.behaviors.impl.FastRequestAdFixedIpFixedBehavior;
+import com.root.etl.behaviors.impl.NormalBotBehavior;
+import com.root.etl.behaviors.impl.NormalBrowserBehavior;
+import com.root.etl.behaviors.impl.NormalMobilBehavior;
+import com.root.etl.loader.ConfigLoader;
 import java.util.concurrent.CountDownLatch;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

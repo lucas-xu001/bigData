@@ -1,4 +1,4 @@
-package com.atguigu.etl.entity;
+package com.root.etl.entity;
 
 public class Product {
   private Long id;

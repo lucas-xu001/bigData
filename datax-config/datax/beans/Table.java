@@ -1,4 +1,4 @@
-package com.atguigu.datax.beans;
+package com.root.datax.beans;
 
 import java.util.ArrayList;
 import java.util.HashMap;

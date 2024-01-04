@@ -1,4 +1,4 @@
-package com.atguigu.etl.loader;
+package com.root.etl.loader;
 
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;

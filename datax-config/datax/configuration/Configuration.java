@@ -1,4 +1,4 @@
-package com.atguigu.datax.configuration;
+package com.root.datax.configuration;
 
 import java.io.IOException;
 import java.nio.file.Files;

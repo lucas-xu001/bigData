@@ -1,3 +1,43 @@
+## Docker images
+
+可以用dockerfile编译，但是需要额外配置网络
+
+已经打包了docker镜像
+
+dockerhub地址：https://hub.docker.com/repository/docker/xufengyuan/bigdata/general
+
+共三个镜像：hadoop102，hadoop103，hadoop104
+
+直接使用docker push命令部署到本地
+
+**项目最终展示接口：hadoop102:37799/webroot/decision/link/6W4N**
+
+**最终演示结果参考视频：推荐部分.mkv，异常检测部分.mkv**
+
+**相关数据存储地址：/opt/software/ad_mock/log**
+
+**hadoop访问接口：hadoop102:9870**
+
+相关shell命令已经打包在/bin目录中，**可以直接使用**
+
+开启hadoop：hdp.sh start
+
+关闭hadoop：hdp.sh stop
+
+加载点击数据：ad_mock.sh
+
+加载广告数据：add_mysql_to_hdfs.sh 
+
+开启kafka：kf.sh start
+
+开启zookeeper：zk.sh start
+
+开启flume生产者：ad_f1.sh
+
+开启flume消费者：ad_f2.sh
+
+
+
 ## 数据库概述
 
 广告管理平台中核心的几张表结构如下：
@@ -71,4 +111,4 @@
 
 ![采集](.\pic\采集.jpg)
 
-## docker 镜像概述
+## 

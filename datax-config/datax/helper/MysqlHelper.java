@@ -1,11 +1,11 @@
-package com.atguigu.datax.helper;
+package com.root.datax.helper;
 
 import cn.hutool.db.Db;
 import cn.hutool.db.Entity;
 import cn.hutool.db.ds.DSFactory;
 import cn.hutool.setting.Setting;
-import com.atguigu.datax.beans.Table;
-import com.atguigu.datax.configuration.Configuration;
+import com.root.datax.beans.Table;
+import com.root.datax.configuration.Configuration;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Comparator;

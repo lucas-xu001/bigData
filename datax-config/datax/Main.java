@@ -1,11 +1,11 @@
-package com.atguigu.datax;
+package com.root.datax;
 
 import cn.hutool.json.JSON;
 import cn.hutool.json.JSONUtil;
-import com.atguigu.datax.beans.Table;
-import com.atguigu.datax.configuration.Configuration;
-import com.atguigu.datax.helper.DataxJsonHelper;
-import com.atguigu.datax.helper.MysqlHelper;
+import com.root.datax.beans.Table;
+import com.root.datax.configuration.Configuration;
+import com.root.datax.helper.DataxJsonHelper;
+import com.root.datax.helper.MysqlHelper;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;

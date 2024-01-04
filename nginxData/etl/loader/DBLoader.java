@@ -1,15 +1,15 @@
-package com.atguigu.etl.loader;
+package com.root.etl.loader;
 
 import cn.hutool.db.Entity;
 import cn.hutool.db.ds.simple.SimpleDataSource;
 import cn.hutool.db.handler.EntityListHandler;
 import cn.hutool.db.handler.RsHandler;
 import cn.hutool.db.sql.SqlExecutor;
-import com.atguigu.etl.entity.Ads;
-import com.atguigu.etl.entity.AdsPlatform;
-import com.atguigu.etl.entity.PlatformInfo;
-import com.atguigu.etl.entity.Product;
-import com.atguigu.etl.entity.ServerHost;
+import com.root.etl.entity.Ads;
+import com.root.etl.entity.AdsPlatform;
+import com.root.etl.entity.PlatformInfo;
+import com.root.etl.entity.Product;
+import com.root.etl.entity.ServerHost;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;

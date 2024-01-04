@@ -1,10 +1,10 @@
-package com.atguigu.etl;
+package com.root.etl;
 
-import com.atguigu.etl.loader.ConfigLoader;
-import com.atguigu.etl.loader.DBLoader;
-import com.atguigu.etl.loader.ResourceLoader;
-import com.atguigu.etl.log.MyAppender;
-import com.atguigu.etl.producer.Executor;
+import com.root.etl.loader.ConfigLoader;
+import com.root.etl.loader.DBLoader;
+import com.root.etl.loader.ResourceLoader;
+import com.root.etl.log.MyAppender;
+import com.root.etl.producer.Executor;
 import java.io.File;
 import java.sql.SQLException;
 import java.util.LinkedList;

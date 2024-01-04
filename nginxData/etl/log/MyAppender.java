@@ -1,4 +1,4 @@
-package com.atguigu.etl.log;
+package com.root.etl.log;
 
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.LoggerContext;
@@ -9,7 +9,7 @@ import ch.qos.logback.core.Context;
 import ch.qos.logback.core.FileAppender;
 import ch.qos.logback.core.encoder.Encoder;
 import cn.hutool.core.io.file.PathUtil;
-import com.atguigu.etl.loader.ConfigLoader;
+import com.root.etl.loader.ConfigLoader;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import org.slf4j.Logger;
@@ -29,7 +29,7 @@ public class MyAppender {
     fileName = abs.toString();
     MyAppender.logger.info("" + fileName);
     LoggerContext lc = (LoggerContext)StaticLoggerBinder.getSingleton().getLoggerFactory();
-    Logger logger = LoggerFactory.getLogger("com.atguigu.etl.behaviors");
+    Logger logger = LoggerFactory.getLogger("com.root.etl.behaviors");
     Logger logger1 = (Logger)logger;
     FileAppender<ILoggingEvent> fileAppender = new FileAppender();
     fileAppender.setContext((Context)lc);

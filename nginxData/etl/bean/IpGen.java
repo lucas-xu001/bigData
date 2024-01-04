@@ -1,4 +1,4 @@
-package com.atguigu.etl.bean;
+package com.root.etl.bean;
 
 import java.io.InputStream;
 import java.util.ArrayList;

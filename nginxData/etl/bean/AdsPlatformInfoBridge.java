@@ -1,7 +1,7 @@
-package com.atguigu.etl.bean;
+package com.root.etl.bean;
 
-import com.atguigu.etl.entity.Ads;
-import com.atguigu.etl.entity.PlatformInfo;
+import com.root.etl.entity.Ads;
+import com.root.etl.entity.PlatformInfo;
 
 public class AdsPlatformInfoBridge {
   private Ads ads;

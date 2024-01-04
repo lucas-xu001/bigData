@@ -1,8 +1,8 @@
-package com.atguigu.etl.behaviors.impl;
+package com.root.etl.behaviors.impl;
 
 import cn.hutool.core.lang.Tuple;
-import com.atguigu.etl.behaviors.BehaviorTool;
-import com.atguigu.etl.behaviors.RequestBehavior;
+import com.root.etl.behaviors.BehaviorTool;
+import com.root.etl.behaviors.RequestBehavior;
 import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

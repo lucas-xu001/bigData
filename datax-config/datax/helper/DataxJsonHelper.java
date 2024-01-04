@@ -1,9 +1,9 @@
-package com.atguigu.datax.helper;
+package com.root.datax.helper;
 
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-import com.atguigu.datax.beans.Table;
-import com.atguigu.datax.configuration.Configuration;
+import com.root.datax.beans.Table;
+import com.root.datax.configuration.Configuration;
 
 public class DataxJsonHelper {
   private final JSONObject inputConfig = JSONUtil.parseObj("{\"job\": {\"content\": [{\"reader\": {\"name\": \"mysqlreader\",\"parameter\": {\"column\": [],\"connection\": [{\"jdbcUrl\": [],\"table\": []}],\"password\": \"\",\"splitPk\": \"\",\"username\": \"\"}},\"writer\": {\"name\": \"hdfswriter\",\"parameter\": {\"column\": [],\"compress\": \"gzip\",\"hadoopConfig\":{\n         \"dfs.nameservices\": \"mycluster\",\n         \"dfs.ha.namenodes.mycluster\": \"namenode1,namenode2\",\n         \"dfs.namenode.rpc-address.mycluster.namenode1\": \"hadoop102:8020\",\n         \"dfs.namenode.rpc-address.mycluster.namenode2\": \"hadoop103:8020\",\n         \"dfs.client.failover.proxy.provider.mycluster\": \"org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider\"\n },\"fieldDelimiter\": \"\\t\",\"fileName\": \"content\",\"fileType\": \"text\",\"path\": \"${targetdir}\",\"writeMode\": \"truncate\",\"nullFormat\": \"\\\\N\"}}}],\"setting\": {\"speed\": {\"channel\": 1}}}}");

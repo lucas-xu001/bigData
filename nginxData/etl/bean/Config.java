@@ -1,4 +1,4 @@
-package com.atguigu.etl.bean;
+package com.root.etl.bean;
 
 import cn.hutool.core.date.LocalDateTimeUtil;
 import java.time.ZoneOffset;
