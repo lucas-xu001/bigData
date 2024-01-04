@@ -1,12 +1,12 @@
 export default {
     /*-----------------------------------------------日期类-------------------------------------------------------------*/
     /**
-     * 将Date类型日期格式转换为字符串
+     * 将Date类型日期格式转换为字符串 
      * @param date
      * @param format 默认 yyyy-mm-dd | yyyy-mm-dd hh:mm:ss
      * @returns {string}
      */
-    dateFormat(_date,_format) {
+    dateFormat(_date, _format) {
         let date = new Date(_date);
         let year = date.getFullYear();
         let month = date.getMonth() < 9 ? "0" + (date.getMonth() + 1) : "" + (date.getMonth() + 1);
@@ -14,8 +14,8 @@ export default {
         let hour = date.getHours() < 10 ? "0" + date.getHours() : "" + date.getHours();
         let minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : "" + date.getMinutes();
         let seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : "" + date.getSeconds();
-        if(_format == "yyyy-mm-dd hh:mm:ss"){
-            return (year + "-" + month + "-" + day + " "+ hour + ":"+minutes + ":"+seconds);
+        if (_format == "yyyy-mm-dd hh:mm:ss") {
+            return (year + "-" + month + "-" + day + " " + hour + ":" + minutes + ":" + seconds);
         }
         return (year + "-" + month + "-" + day);
     },
@@ -41,22 +41,22 @@ export default {
      * @param limitTimes limitTimes 时间，单位分钟
      * @returns {{min: number, second: number}}
      */
-    countDown(createDate,limitTimes){
-        limitTimes=limitTimes*60
-        let now=new Date()
-        let create=new Date(createDate)
-        let nowSecond=now.getTime()
-        let createSecond=create.getTime()
-        let countSecond=parseInt((nowSecond-createSecond)/1000)
-        let times= limitTimes-countSecond
-        if(times<=0){
-            times=0;
+    countDown(createDate, limitTimes) {
+        limitTimes = limitTimes * 60
+        let now = new Date()
+        let create = new Date(createDate)
+        let nowSecond = now.getTime()
+        let createSecond = create.getTime()
+        let countSecond = parseInt((nowSecond - createSecond) / 1000)
+        let times = limitTimes - countSecond
+        if (times <= 0) {
+            times = 0;
         }
-        let minutes = parseInt(times/60) < 10 ? "0" + parseInt(times/60): parseInt(times/60) ;
-        let seconds = parseInt(times%60) < 10 ? "0" + parseInt(times%60): parseInt(times%60);
+        let minutes = parseInt(times / 60) < 10 ? "0" + parseInt(times / 60) : parseInt(times / 60);
+        let seconds = parseInt(times % 60) < 10 ? "0" + parseInt(times % 60) : parseInt(times % 60);
         return {
-            min:minutes,
-            second:seconds
+            min: minutes,
+            second: seconds
         }
     },
     /*-----------------------------------------------数组类-------------------------------------------------------------*/
@@ -66,12 +66,12 @@ export default {
      * @param min 小数组
      * @returns {boolean}
      */
-    arrayIsContained:(max, min)=>{
-        if(!(max instanceof Array) || !(min instanceof Array)) return false;
-        if(max.length < min.length) return false;
+    arrayIsContained: (max, min) => {
+        if (!(max instanceof Array) || !(min instanceof Array)) return false;
+        if (max.length < min.length) return false;
         let aStr = max.toString();
-        for(let i = 0, len = min.length; i < len; i++){
-            if(aStr.indexOf(min[i]) == -1) return false;
+        for (let i = 0, len = min.length; i < len; i++) {
+            if (aStr.indexOf(min[i]) == -1) return false;
         }
         return true;
     },
@@ -81,7 +81,7 @@ export default {
      * @param key
      * @returns {*}
      */
-    jsonSortByKey(jsonArray,key) {
+    jsonSortByKey(jsonArray, key) {
         return jsonArray.sort(function (a, b) {
             let x = a[key];
             let y = b[key];
@@ -93,33 +93,33 @@ export default {
      * 解析百度地图的地址为字符串
      * @param geo
      */
-    parseBaiDuMap(geo){
-        let address="";
+    parseBaiDuMap(geo) {
+        let address = "";
 
-        if(geo.province != ""){
-            address+=geo.province+"-"
+        if (geo.province != "") {
+            address += geo.province + "-"
         }
 
-        if(geo.city != ""){
-            address+=geo.city+"-"
+        if (geo.city != "") {
+            address += geo.city + "-"
         }
 
-        if(geo.district != ""){
-            address+=geo.district+"-"
-        }else{
-            address=address.substring(0,address.length-1)
+        if (geo.district != "") {
+            address += geo.district + "-"
+        } else {
+            address = address.substring(0, address.length - 1)
         }
 
-        if(geo.street != ""){
-            address+=geo.street+"-"
-        }else{
-            address=address.substring(0,address.length-1)
+        if (geo.street != "") {
+            address += geo.street + "-"
+        } else {
+            address = address.substring(0, address.length - 1)
         }
 
-        if(geo.streetNumber != ""){
-            address+=geo.streetNumber
-        }else{
-            address=address.substring(0,address.length-1)
+        if (geo.streetNumber != "") {
+            address += geo.streetNumber
+        } else {
+            address = address.substring(0, address.length - 1)
         }
         return address;
     },
@@ -144,19 +144,19 @@ export default {
      */
     dragFunc(id) {
         let Drag = document.getElementById(id);
-        Drag.onmousedown = function(event) {
+        Drag.onmousedown = function (event) {
             let ev = event || window.event;
             event.stopPropagation();
             let disX = ev.clientX - Drag.offsetLeft;
             let disY = ev.clientY - Drag.offsetTop;
-            document.onmousemove = function(event) {
+            document.onmousemove = function (event) {
                 let ev = event || window.event;
                 Drag.style.left = ev.clientX - disX + "px";
                 Drag.style.top = ev.clientY - disY + "px";
                 Drag.style.cursor = "move";
             };
         };
-        Drag.onmouseup = function() {
+        Drag.onmouseup = function () {
             document.onmousemove = null;
             this.style.cursor = "default";
         };

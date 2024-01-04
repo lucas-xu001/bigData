@@ -73,7 +73,7 @@ for fn in filenames:
     df_cent = pd.read_csv(centroids, sep=",", header=None)
     df_cent.rename(columns={
         0: 'cluster',
-        1: 'latitude',
+        1: 'latitude', 
         2: 'longitude'}, inplace=True)
 
     dict_2 = dict (

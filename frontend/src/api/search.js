@@ -1,26 +1,26 @@
 import axios from '@/utils/axios'
 export default {
     //查询所有城市
-    getAllCity(orderByPingYin){
+    getAllCity(orderByPingYin) {
         return axios({
             url: '/sysAreaList',
             method: 'get',
-            params: {orderByPingYin}
+            params: { orderByPingYin }
         })
     },
     //查询地区分类
-    getClientAreaTypeList(){
+    getClientAreaTypeList() {
         return axios({
             url: '/clientAreaTypeList',
-            method:'get'
+            method: 'get'
         })
     },
     //查询用户常用地区
-    getClientAreaPopularList(areaTypeId,treeCode){
+    getClientAreaPopularList(areaTypeId, treeCode) {
         return axios({
             url: '/clientAreaPopularList',
             method: 'get',
-            params: {areaTypeId,treeCode}
+            params: { areaTypeId, treeCode }
         })
     }
 

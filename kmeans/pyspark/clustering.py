@@ -2,7 +2,7 @@ from __future__ import division
 import math
 import random
 import numpy
-
+ 
 
 class KMeans:
     def __init__(self, k):

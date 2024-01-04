@@ -25,7 +25,7 @@ export default {
         return axios({
             url: '/sendSms',
             method: 'post',
-            data: {phone}
+            data: { phone }
         })
     }
 }

@@ -10,10 +10,10 @@ export default {
         dragDom.style.cssText += ';top:0px;'
 
         // 获取原有属性 ie dom元素.currentStyle 火狐谷歌 window.getComputedStyle(dom元素, null);
-        const sty = (function() {
+        const sty = (function () {
             if (window.document.currentStyle) {
                 return (dom, attr) => dom.currentStyle[attr];
-            } else{
+            } else {
                 return (dom, attr) => getComputedStyle(dom, false)[attr];
             }
         })()
@@ -41,10 +41,10 @@ export default {
             let styT = sty(dragDom, 'top');
 
             // 注意在ie中 第一次获取到的值为组件自带50% 移动之后赋值为px
-            if(styL.includes('%')) {
+            if (styL.includes('%')) {
                 styL = +document.body.clientWidth * (+styL.replace(/\%/g, '') / 100);
                 styT = +document.body.clientHeight * (+styT.replace(/\%/g, '') / 100);
-            }else {
+            } else {
                 styL = +styL.replace(/\px/g, '');
                 styT = +styT.replace(/\px/g, '');
             };

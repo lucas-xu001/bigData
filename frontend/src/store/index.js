@@ -21,8 +21,8 @@ export default new Vuex.Store({
     region: state => state.search.region,
     point: state => state.search.point,
     dateRange: state => state.search.dateRange,
-    showLoginDialog: state=> state.header.showLoginDialog,
-    notice: state=> state.header.notice,
+    showLoginDialog: state => state.header.showLoginDialog,
+    notice: state => state.header.notice,
     unReadNotice: state => state.header.unReadNotice,
   },
   mutations: {

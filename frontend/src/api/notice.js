@@ -9,23 +9,23 @@ export default {
         })
     },//删除通知
     deleteSysNoticeById(noticeIds) {
-        const data={
+        const data = {
             noticeIds
         }
         return axios({
             url: '/deleteSysNoticeById',
             method: 'post',
-            data:data
+            data: data
         })
     },//通知已读
     sysNoticeIsRead(noticeIds) {
-        const data={
+        const data = {
             noticeIds
         }
         return axios({
             url: '/sysNoticeIsRead',
             method: 'post',
-            data:data
+            data: data
         })
     }
 }

@@ -6,7 +6,7 @@ import HouseDetail from "@/views/customer/HouseDetail";
 import Order from "@/views/customer/Order";
 import CustomerInfo from "@/views/customer/CustomerInfo";
 import UserInfo from "@/components/customer/UserInfo";
-import OrderInfo from "@/components/customer/OrderInfo";
+import OrderInfo from "@/components/customer/OrderInfo"; 
 import CollectInfo from "@/components/customer/CollectInfo";
 import MessageInfo from "@/components/customer/MessageInfo";
 import MerchantManage from "@/views/landlord/MerchantManage";

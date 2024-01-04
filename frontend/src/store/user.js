@@ -5,10 +5,10 @@ import cookie from '@/utils/auth'
  */
 const user = {
   state: {
-    token: cookie.getToken()==undefined?'':cookie.getToken(),
-    userId:cookie.getUserId()==undefined?'':cookie.getUserId(),
-    nikeName:cookie.getNikeName()==undefined?'':cookie.getNikeName(),
-    avatar:cookie.getAvatar()==undefined?'':cookie.getAvatar(),
+    token: cookie.getToken() == undefined ? '' : cookie.getToken(),
+    userId: cookie.getUserId() == undefined ? '' : cookie.getUserId(),
+    nikeName: cookie.getNikeName() == undefined ? '' : cookie.getNikeName(),
+    avatar: cookie.getAvatar() == undefined ? '' : cookie.getAvatar(),
   },
 
   mutations: {

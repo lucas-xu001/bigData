@@ -25,7 +25,7 @@ if __name__ == "__main__":
     k = int(sys.argv[4])
     if k < 1:
         print "k should be larger than 0\n"
-        sys.exit(1)
+        sys.exit(1) 
 
 
     # Parse data

@@ -3,7 +3,7 @@ def extract_attribute_value(xml, attribute_name):
     end = '" '
 
     start_index = xml.find(beg)
-    if start_index == -1:
+    if start_index == -1: 
         return None
 
     substring = xml[start_index + len(beg):len(xml)]

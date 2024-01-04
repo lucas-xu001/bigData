@@ -5,19 +5,19 @@ import city from "@/api/search";
 const search = {
     state: {
         /*所有城市*/
-        allCity:[],
+        allCity: [],
         /*字母排序的所有城市*/
-        orderAllCity:[],
+        orderAllCity: [],
         /*城市*/
-        cityName:'成都市',
+        cityName: '成都市',
         /*城市编码*/
-        cityCode:'5101',
+        cityCode: '5101',
         /*具体位置*/
-        region:'',
+        region: '',
         /*具体经纬度*/
-        point:{"lng":"","lat":""},
+        point: { "lng": "", "lat": "" },
         /*时间范围*/
-        dateRange:'',
+        dateRange: '',
     },
 
     mutations: {
@@ -36,7 +36,7 @@ const search = {
         SET_REGION: (state, region) => {
             state.region = region
         },
-        SET_POINT: (state,point) => {
+        SET_POINT: (state, point) => {
             state.point = point
         },
         SET_DATERANGE: (state, dateRange) => {
@@ -45,27 +45,27 @@ const search = {
     },
 
     actions: {
-        getAllCity({commit}){
+        getAllCity({ commit }) {
             return new Promise((resolve, reject) => {
-                city.getAllCity("0").then((res)=>{
-                    commit('SET_ALLCITY',res.data)
+                city.getAllCity("0").then((res) => {
+                    commit('SET_ALLCITY', res.data)
                     resolve(res)
                 }).catch(error => {
                     reject(error)
                 })
             })
         },
-        getOrderAllCity({commit}){
+        getOrderAllCity({ commit }) {
             return new Promise((resolve, reject) => {
-                city.getAllCity("1").then((res)=>{
-                    commit('SET_ORDERALLCITY',res.data)
+                city.getAllCity("1").then((res) => {
+                    commit('SET_ORDERALLCITY', res.data)
                     resolve(res)
                 }).catch(error => {
                     reject(error)
                 })
             })
         },
-        setSearchParam({commit},cityName,cityCode,region,point,dateRange){
+        setSearchParam({ commit }, cityName, cityCode, region, point, dateRange) {
             commit('SET_CITYNAME', cityName)
             commit('SET_CITYCODE', cityCode)
             commit('SET_REGION', region)
@@ -74,6 +74,6 @@ const search = {
         }
 
     }
-  }
+}
 
-  export default search
+export default search

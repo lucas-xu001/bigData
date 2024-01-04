@@ -4,7 +4,7 @@ from math import degrees, radians, sin, cos, sqrt, asin, atan2
 EARTH_RADIUS = 6371
 
 class LatLonPoint:
-    def __init__(self, lat, lon):
+    def __init__(self, lat, lon): 
         self.lat = float(lat)
         self.lon = float(lon)
 

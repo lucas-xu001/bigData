@@ -2,7 +2,7 @@ import matplotlib
 matplotlib.use('Agg')
 import numpy as np
 import scipy.stats as stats
-import pylab as pl
+import pylab as pl 
 from clustering import KMeans
 from matplotlib import pyplot
 
