@@ -1,6 +1,6 @@
 ## Docker images
 
-可以用dockerfile编译，但是需要额外配置网络
+可以用dockerfile编译(已经在项目中提供)，但是需要额外配置网络
 
 已经打包了docker镜像
 
